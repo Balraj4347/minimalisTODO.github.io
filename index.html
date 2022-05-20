@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>To-Do List</title>
+
+    <link rel="icon" href="TO_DO.jpg" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Titillium+Web"
+    />
+    <link
+      rel="stylesheet"
+      href="/font-awesome-4.7.0/css/font-awesome.min.css"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style_todo.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="Header">
+        <img src="TO_DO.jpg" alt="Icon" />
+        <h1>To-Do List</h1>
+      </div>
+      <!-- input box elements -->
+      <div class="input-box">
+        <label for="task">Enter Task</label>
+        <input
+          type="text"
+          name="task"
+          id="task_todo"
+          placeholder="task here"
+          oninput="this.style.width = ((this.value.length + 1) * 8) + 'px';"
+        />
+        <input type="button" name="submit" id="submit" value="OK" />
+      </div>
+
+      <!-- displaying the tasks -->
+      <div class="display_task">
+        <ul id="list">
+          <!-- <li class="item">
+              <i class="fa fa-circle-thin co" job="complete" id="0"></i>
+              <p class="text">Drink Coffee</p>
+              <i class="fa fa-trash-o de" job="delete" id="0"></i>
+            </li> -->
+        </ul>
+      </div>
+      <!-- button to clear localstorage -->
+      <div class="clear">
+        <i class="fa fa-refresh"></i>
+      </div>
+    </div>
+    <!-- javascript code import -->
+    <script src="app.js"></script>
+  </body>
+</html>
