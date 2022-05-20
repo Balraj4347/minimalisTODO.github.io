@@ -24,21 +24,26 @@ body {
   height: 30px;
   margin: 0 20px 0 0;
 }
+.inner_box {
+  margin: 0px auto;
+}
 .input-box {
   margin: 0px auto;
+  padding: 0px 2vmax;
 }
 .input-box label {
   margin: 2px 10px 1px 0px;
   font-family: "Courier New", Courier, monospace;
   font-size: 20px;
+  padding: 5px;
 }
 .input-box input[type="text"] {
   border: 2px solid #000;
   padding: 10px;
   min-width: 40vw;
-  max-width: 50vw;
+  max-width: 45vw;
   line-height: 20px;
-  margin: 7px 9px 5px 0px;
+  margin: 7px 9px 5px 5px;
   color: #080809;
 }
 .input-box input[type="button"] {
@@ -46,6 +51,7 @@ body {
   padding: 7px;
   color: black;
   background-color: rgb(217, 217, 217);
+  margin-left: 5px;
 }
 .input-box input[type="button"]:hover {
   background-color: black;
